@@ -3,7 +3,9 @@ let message="";
 let i=0;
 
 function start(){
+i = 0;
 girl=document.getElementById("name").value;
+
 if(!girl) return alert("Your gorgeous name here ✨🥺");
 
 message=`Too my prettiest  ${girl} 💕
@@ -39,7 +41,8 @@ function typeWriter(){
 if(i < message.length){
 document.getElementById("typing").innerHTML += message.charAt(i);
 i++;
-setTimeout(typeWriter,30);
+setTimeout(typeWriter,40);
+
 }else{
 document.getElementById("app").innerHTML += `
 <button onclick="galentine()">Next 💗</button>
@@ -61,12 +64,6 @@ e.style.fontSize=Math.random()*25+15+"px";
 document.body.appendChild(e);
 setTimeout(()=>e.remove(),10000);
 },500);
-}
-function nextPage(){
-document.getElementById("app").innerHTML=`
-<h2>Will you be my Galentine, my bbg? 🥺💗</h2>
-<div class="heart-btn" onclick="breakHeart()">💗</div>
-`;
 }
 
 function breakHeart(){
@@ -140,4 +137,5 @@ document.body.appendChild(e);
 setTimeout(()=>e.remove(),6000);
 },200);
 }
+
 
