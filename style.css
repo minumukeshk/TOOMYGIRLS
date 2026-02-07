@@ -18,11 +18,12 @@ color:white;
 }
 
 /* clearer background */
-
 .bg{
 position:absolute;
 inset:0;
-background:url("image/group.jpeg") center/cover no-repeat;
+height:100vh;
+background:url("group.jpeg") center/cover no-repeat;
+
 filter:blur(1px) brightness(100%);
 
 z-index:-2;
@@ -233,3 +234,4 @@ text-shadow:
 0 2px 6px rgba(0,0,0,.6);
 font-weight:600;
 }
+
